@@ -1,0 +1,141 @@
+body {
+  font-family: "oswald" "sans-serif";
+    margin: 0;
+    padding: 0;
+    border: 0;    
+}
+
+/*nav*/
+
+.navbar {
+  background-color: black;   
+  color: white;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;    
+}
+
+.navbar-brand {
+  font-family: "oswald";    
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  text-align: left;
+  padding-right: 3px;
+  }
+
+.nav-item {
+  font-family: "oswald"; 
+  font-weight: bold;
+}
+
+
+
+/*header*/
+
+#superhero {
+  background-image: url("../img/sh1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+
+}
+
+/*información*/
+
+#buscasuper {
+  color: #373a3c;
+  font-family: "oswald";
+}
+
+h1 {
+  color:rgb(255, 217, 0);
+  margin-top: 45px;
+  padding-top: 3px;  
+  background-color: black;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 500;
+  
+}
+
+.card-title {
+  
+  font-weight: bold;
+}
+
+.form-label {
+  font-size: 45px;
+  text-align: center;
+  margin-left: 50px;
+  color: red;
+}
+.buscar {
+  background-color: black;
+  text-align: center;
+  padding: 60px;
+}
+
+/*contacto*/
+
+#contacto h2 {  
+  font-size: 52px;
+}
+
+#contacto p {
+  font-size: 25px;
+  font-weight: bold;
+} 
+
+button {
+  margin: 10px;
+  font-family: "oswald";
+  color: black;
+}
+
+/*footer*/
+
+footer {
+  background-color:black;
+   
+}
+  
+h3 {
+  color:white;
+  margin-top: 45px;
+  padding-top: 3px;  
+  background-color: black;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 500;
+}
+  
+.iconos{  
+  background-color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;  
+}  
+  
+i {
+  color:#ffffff;
+  font-size: 50px;
+  background:black;
+  padding: 5px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  text-align: center;
+  width: 100%;
+}  
+
+ 
+ 
+
+
+
