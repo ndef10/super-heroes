@@ -3,7 +3,7 @@
 Este es un sitio web realizado durante el bootcam
 
 ## Tecnologías utilizadas
-Este sitio web está construido con HTML, CSS y JvaScript.
+Este sitio web está construido con HTML, CSS y JavaScript.
 
 ## Requerimientos a cumplir:
 1. Crear la estructura básica para la página web implementando HTML, que incluya un
