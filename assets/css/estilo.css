@@ -164,8 +164,10 @@ h3 {
 .grafico {
   background-color: white;
   border-radius: 10px;
-  padding: 30px auto;
+  padding-left: 50px;
   margin-top: 50px;
+  width: auto;
+  height: auto;
 }
 
 .card-body .grafico {
@@ -182,6 +184,8 @@ footer {
 
 footer p {
   text-align: center;
+  margin-bottom: 0%;
+  padding-bottom: 20px;
 }
 
 h4 {
@@ -213,7 +217,71 @@ i {
   width: 100%;
 }  
 
+@media (max-width: 768px) {
+  body {  
+    background: linear-gradient(70deg, red, black, red);
+  }
+  h1 {
+    font-size: 40px;
+    margin: auto; 
+  }
+  input {
+    width: 200px;
+    font-size: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .btn {
+    padding: 5px;
+    margin: auto; 
+  }
+  h3 {
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+  /* aqui falta la info api */
+
+  h4 {
+    margin-left: 10px;
+    font-size: 1.5rem;
+  }
+  .iconos{  
+    text-align: center;
+    justify-content: center;  
+    margin: auto;
+  }  
  
+  /* despues lo muevo para arriba */
+  
+  .noencontrado {
+    width: auto;
+    height: auto;
+    /* posiblemente un pading right */
+  }
+  .card {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .contenedor-info {
+    flex-direction: column; 
+  }
+
+  .card-title {
+    text-align: center;
+    width: 320px;
+  }
+  .card-text {
+    width: 320px;
+  }
+  .grafico {
+    width: auto;
+    height: auto;
+    padding-left: 25px;
+  }
+}
  
 
 
