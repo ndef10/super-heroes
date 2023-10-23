@@ -256,7 +256,10 @@ i {
   .noencontrado {
     width: auto;
     height: auto;
-    /* posiblemente un pading right */
+  }
+  .noencontrado img{
+    width: 300px;
+    height: auto;
   }
   .card {
     width: auto;
