@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--googe font oswal, open sans, miniver -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Open+Sans:wght@300;500;600&family=Oswald:wght@300;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Open+Sans:wght@300;500;600&family=Oswald:wght@300;600;700&display=swap" rel="stylesheet"> -->
 
     <!--favicon-->
-    <link rel= "shortcut icon" type="image/png" href="./assets/img/favicon.ico"/>       
+    <link rel= "shortcut icon" type="image/png" href="./assets/img/rayo.png"/>       
     
     <!--llamado local archivo css-->
     <link rel="stylesheet" href="./assets/css/estilo.css">    
@@ -32,20 +32,17 @@
     <!--barra de navegación-->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">              
-        <a class="navbar-brand" href="#"><img src="./assets/img/sh2.jpg" id="logo" /> SuperHero</a>
+        <a class="navbar-brand" href="#"><img src="./assets/img/rayo.png" id="logo" /> SuperHero</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">            
               <li class="nav-item">
-              <a class="nav-link" href="#superhero">Inicio</a>
+              <a class="nav-link" href="#superhero">Home</a>
 
               <li class="nav-item">
-              <a class="nav-link" href="#buscasuper">Encuentra tu SuperHero</a>
-                             
-              <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
+              <a class="nav-link" href="#buscasuper">Find your SuperHero</a>
           </ul>          
         </div>
       </div>
@@ -59,78 +56,47 @@
     <section id="buscasuper" class="py-5 container">
 
       <form class="buscar">
-        <label for="input" class="form-label">Indica el número del SuperHero a buscar</label><br>
+        <h1>Indicates the number of the hero to search</h1>
+        <label for="input" class="form-label"></label><br>
         <input type="text" id="numero" class="seleccionsuper">
-        <button type="button" class="btn btn-warning">Buscar</button> 
+        <button type="button" class="btn">Search</button> 
       </form> 
 
     </section> 
 
     <section id="respuesta">
-      <h1 >CARÁCTER ERRÓNEO<br>(Ingresa sólo números del 1 al 732) </h1>     
+      <h3 >WRONG CHARACTER<br>(Enter only numbers from 1 to 732) </h3>     
     </section>
     
     <section id="informacion" class="py-5 container"> 
     <!--card-->  
-      <div class="row pt-3">
-        <div class="col-6">
-          <div class="margen">
-            <div class="row g-0">
-             <div class="col-md-4 mt-4">
-              <img class="img-fluid rounded-start" id="fotito" alt="">
-             </div>
-             <div class="col-md-8">
-              <div class="card-body">
-                <h2 class="card-title"></h2>
-                <p class="card-text"></p>
-                </p>                
-              </div>
+      <div class="card">
+        <div class="contenedor-imagen">
+          <div class="noencontrado">
+            <img src="/assets/img/186795261-super-héroe-silueta-superhéroe-cabo-mujer.jpg" alt="">
+            <p>No tenemos imagen para este superhero</p>    
             </div>
+          <img class="img-fluid rounded-start" id="fotito" alt=""> 
+        </div>
+  
+        <div class="contenedor-info">  
+          <div class="card-body">
+            <h2 class="card-title"></h2>
+            <p class="card-text"></p>
+          </div>
+
+          <div class="grafico" id="chartContainer" style="width: 400px; height: 500px">
           </div>
         </div>
-      </div>          
- 
-    <!--gráfico-->    
-      <div class="col-6">
-        <div id="chartContainer" style="width: 100%; height: 500px"></div>     
-      </div>    
-    </section>
-
-    <!--formulario de contacto--> 
-    <section id="contacto" class="py-5 container">
-      <h2>CONTACTO</h2>
-      <hr> 
-      <article class="formulario">
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Nombre</label>
-            <input type="nombre" class="form-control" id="exampleInputnombre" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted"></small>
-          </div>
-  
-          <div class="form-group">
-            <label for="exampleInputEmail1">Asunto</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted"></small>
-          </div>
-  
-          <div class="form-group">
-            <label for="exampleInputEmail1">Mensaje</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-  
-          </div>
-  
-          <button data-toggle="tooltip" data-placement="top" title="Enviar mensaje" submit
-            class="btn btn-danger">Enviar</button>
-        </form>
-      </article>
-    </section>
+      </div>
+       
+    </section> 
 
     <!--footer--> 
     <footer>            
       <div class="row col-12">
         <div class="col-md-5">
-          <h3>SuperHero</h3>
+          <h4>Visit our social networks</h4>
         </div>
 
         <div class="col-md-7">
@@ -143,10 +109,15 @@
           </div>
         </div>
       </div>
+      
+      <div><p>
+        All rights reserved &copy; 2023 SuperHero,
+        developed by: <span>Defwar Tech.</span>
+      </p></div>
     </footer>
   
     <!--llamado local archivo js-->
-    <script src="./assets/js/index.js"></script>
+    <script defer src="./assets/js/index.js"></script>
     
     <!--componente do boostrap solo por si acaso-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
 body {
-  font-family: "oswald" "sans-serif";
+    font-family: 'Comic Neue', cursive;
     margin: 0;
     padding: 0;
-    border: 0;    
+    border: 0;  
+    background: linear-gradient(90deg, black, red);
 }
 
 /*nav*/
 
 .navbar {
-  background-color: black;   
+  background-color: rgba(0, 0, 0, 0.314);   
   color: white;
   position: fixed;
   width: 100vw;
@@ -16,7 +19,6 @@ body {
 }
 
 .navbar-brand {
-  font-family: "oswald";    
   font-size: 40px;
   font-weight: 700;
 }
@@ -24,103 +26,180 @@ body {
 #logo {
   width: 50px;
   height: 50px;
-  text-align: left;
   padding-right: 3px;
+  border-radius: 10px;
   }
 
 .nav-item {
-  font-family: "oswald"; 
   font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
 }
-
-
 
 /*header*/
 
 #superhero {
-  background-image: url("../img/sh1.jpg");
+  background-image: url("../img/spiderman-5561671_1280.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  width: auto;
   height: 100vh;
   position: relative;
-
+  padding-top: 500px;
 }
 
-/*información*/
+/* buscador */
 
-#buscasuper {
-  color: #373a3c;
-  font-family: "oswald";
+.buscar {
+  background-color: black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 60px;
+  width: 100%;
+  margin: 0;
 }
 
 h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-left: 50px;
+  border-radius: 1rem;
+  color: red;
+  font-weight: bold;
+  font-family: 'Comic Neue', cursive;
+  text-shadow: 0 0 10px white;  
+}
+
+input {
+  width: 500px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.form-label {
+  margin-left: 50px;
+  border-radius: 1rem;
+}
+
+.btn {
+  background-color: red;
+  width: 170px;
+  padding: 10px;
+  margin-left: 2rem;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: rgb(227, 227, 32);
+}
+
+/* mensaje de error */
+
+h3 {
   color:rgb(255, 217, 0);
   margin-top: 45px;
   padding-top: 3px;  
   background-color: black;
   font-size: 3rem;
   text-align: center;
-  font-weight: 500;
-  
+  font-weight: bold;
+}
+
+
+
+/* info api */
+
+.noencontrado {
+  display: none;
+}
+.noencontrado {
+  width: 400px;
+  height: auto;
+  padding: 50px;
+}
+
+#respuesta {
+  display: none;
+}
+
+#informacion{
+  display: none;
+}
+
+.card {
+  width: 1300px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 50px rgb(45, 43, 43);
 }
 
 .card-title {
+  font-weight: bold;
+}
+
+.imagen-super {
+  width: 700px;
+  height: auto;
+}
+
+.contenedor-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor-info p {
+  font-size: 18px;
   
-  font-weight: bold;
 }
 
-.form-label {
-  font-size: 45px;
-  text-align: center;
-  margin-left: 50px;
-  color: red;
-}
-.buscar {
-  background-color: black;
-  text-align: center;
-  padding: 60px;
+.card-body {
+  width: 400px;
 }
 
-/*contacto*/
-
-#contacto h2 {  
-  font-size: 52px;
+.grafico {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px auto;
+  margin-top: 50px;
 }
 
-#contacto p {
-  font-size: 25px;
-  font-weight: bold;
-} 
-
-button {
-  margin: 10px;
-  font-family: "oswald";
-  color: black;
+.card-body .grafico {
+  flex: 0 0 calc(50% - 1rem);
+  
 }
 
 /*footer*/
 
 footer {
   background-color:black;
-   
+  width: 100%;
 }
-  
-h3 {
+
+footer p {
+  text-align: center;
+}
+
+h4 {
   color:white;
-  margin-top: 45px;
+  margin-left: 340px;
+  margin-top: 55px;
   padding-top: 3px;  
   background-color: black;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
-  font-weight: 500;
 }
   
 .iconos{  
   background-color: black;
   display: flex;
-  text-align: center;
-  justify-content: center;  
+  text-align: right;
+  justify-content: right;  
+  margin-right: 340px;
 }  
   
 i {
