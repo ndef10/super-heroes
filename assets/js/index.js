@@ -106,7 +106,7 @@ $(document).ready(function(){
 
     $("button").click(function(){        
         let id= $("#numero").val();
-        $("#respuesta").hide();
+        $(".respuesta").hide();
         $("#informacion").hide();
         
         if(id == 453) {
@@ -116,7 +116,7 @@ $(document).ready(function(){
         }
        
         if ( isNaN(id) || id >= 733 || id <= 0) {           
-            $("#respuesta").show(500);
+            $(".respuesta").show(500);
             $("#informacion").hide();
             
             
@@ -124,17 +124,24 @@ $(document).ready(function(){
             datosApi(id);
             if (datosApi){
                 $("#informacion").show(500);
-                $("#respuesta").hide(); 
+                $(".respuesta").hide(); 
                 $("#noencontrado").hide();                 
             }
         }           
-    });    
+    }); 
+    
+    
    
+})
+
+$(".navbar-toggler").on("click", function() {
+    console.log("click")
+    $(".nav-link").toggle("slow");
 })
 
 $(document).click(function(event) {
     if (!$(event.target).is("button") && !$(event.target).is("#numero")) {
-        $("#respuesta").hide(500);
+        $(".respuesta").hide(500);
         $("#informacion").hide(500);
         $(".noencontrado").hide(404);
         $("#numero").val(" ")

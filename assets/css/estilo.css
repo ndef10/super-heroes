@@ -123,7 +123,7 @@ h3 {
   padding: 50px;
 }
 
-#respuesta {
+.respuesta {
   display: none;
 }
 
@@ -239,20 +239,6 @@ i {
     margin-top: 10px;
     font-size: 2rem;
   }
-  /* aqui falta la info api */
-
-  h4 {
-    margin-left: 10px;
-    font-size: 1.5rem;
-  }
-  .iconos{  
-    text-align: center;
-    justify-content: center;  
-    margin: auto;
-  }  
- 
-  /* despues lo muevo para arriba */
-  
   .noencontrado {
     width: auto;
     height: auto;
@@ -284,6 +270,15 @@ i {
     height: auto;
     padding-left: 25px;
   }
+  h4 {
+    margin-left: 10px;
+    font-size: 1.5rem;
+  }
+  .iconos{  
+    text-align: center;
+    justify-content: center;  
+    margin: auto;
+  }  
 }
  
 
