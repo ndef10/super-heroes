@@ -8,7 +8,7 @@ $(document).ready(function(){
         async: true,
         dataType:"json",
         success: function(response){
-            console.log(response)
+            // console.log(response)
             if (response.name == "-"){
                 response.name = "Dato no encontrado"
             }
@@ -128,10 +128,7 @@ $(document).ready(function(){
                 $("#noencontrado").hide();                 
             }
         }           
-    }); 
-    
-    
-   
+    });   
 })
 
 $(".navbar-toggler").on("click", function() {
@@ -139,13 +136,5 @@ $(".navbar-toggler").on("click", function() {
     $(".nav-link").toggle("slow");
 })
 
-// $(document).click(function(event) {
-//     if (!$(event.target).is("button") && !$(event.target).is("#numero")) {
-//         $(".respuesta").hide(500);
-//         $("#informacion").hide(500);
-//         $(".noencontrado").hide(404);
-//         $("#numero").val(" ")
-//     }
-    
-// });
+
 
