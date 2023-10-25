@@ -139,13 +139,13 @@ $(".navbar-toggler").on("click", function() {
     $(".nav-link").toggle("slow");
 })
 
-$(document).click(function(event) {
-    if (!$(event.target).is("button") && !$(event.target).is("#numero")) {
-        $(".respuesta").hide(500);
-        $("#informacion").hide(500);
-        $(".noencontrado").hide(404);
-        $("#numero").val(" ")
-    }
+// $(document).click(function(event) {
+//     if (!$(event.target).is("button") && !$(event.target).is("#numero")) {
+//         $(".respuesta").hide(500);
+//         $("#informacion").hide(500);
+//         $(".noencontrado").hide(404);
+//         $("#numero").val(" ")
+//     }
     
-});
+// });
 
