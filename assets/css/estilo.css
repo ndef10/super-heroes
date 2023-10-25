@@ -4,21 +4,21 @@ body {
     font-family: 'Comic Neue', cursive;
     margin: 0;
     padding: 0;
-    border: 0;  
+    box-sizing: border-box; 
     background: linear-gradient(90deg, black, red);
 }
 
 /*nav*/
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.314);   
+  background-color: #00000003;   
   color: white;
   position: fixed;
   width: 100vw;
   z-index: 1;    
 }
 
-.navbar-brand {
+.brand {
   font-size: 40px;
   font-weight: 700;
 }
@@ -46,9 +46,7 @@ body {
   width: auto;
   height: 100vh;
   position: relative;
-  padding-top: 500px;
 }
-
 /* buscador */
 
 .buscar {
@@ -281,8 +279,5 @@ i {
   }  
 }
  
-
-
-
 
 

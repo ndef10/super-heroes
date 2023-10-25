@@ -104,7 +104,7 @@ $(document).ready(function(){
     })
     }
 
-    $("button").click(function(){        
+    $("#buscar").click(function(){        
         let id= $("#numero").val();
         $(".respuesta").hide();
         $("#informacion").hide();
@@ -114,7 +114,7 @@ $(document).ready(function(){
         }else {
             $(".noencontrado").hide();
         }
-       
+    
         if ( isNaN(id) || id >= 733 || id <= 0) {           
             $(".respuesta").show(500);
             $("#informacion").hide();
