@@ -97,9 +97,7 @@ $(document).ready(function(){
             $("#chartContainer").CanvasJSChart(options);            
         },
         error: function(error){            
-           console.log(error); 
            $("#informacion").html("Ha ocurrido un error: " + error.statusText);
-
         }            
     })
     }
