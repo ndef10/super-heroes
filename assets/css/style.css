@@ -39,7 +39,7 @@ body {
 /*header*/
 
 #superhero {
-  background-image: url("../img/spiderman-5561671_1280.jpg");
+  background-image: url("../img/spiderman.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -93,7 +93,8 @@ input {
 }
 
 .btn:hover {
-  background-color: rgb(227, 227, 32);
+  background-color: rgb(234, 234, 59);
+  color: black;
 }
 
 /* mensaje de error */
@@ -167,8 +168,7 @@ h3 {
 }
 
 .card-body .grafico {
-  flex: 0 0 calc(50% - 1rem);
-  
+  flex: 0 0 calc(50% - 1rem); 
 }
 
 /*footer*/
